@@ -76,16 +76,7 @@
 <%		for(/*VO가져온것 돌리기*/int i=0;i<=0;i++){	%>
 			<tr class="클래스_tr_top1">
 				<td class="클래스_td_align1">글번호</td>
-				<td align="left"><a href="qHitUpdate.do?board_num=글번호&page=페이지번호">
-				
-				<%
-					if(/*답글의 lev에 따라*/false){
-						for(int j=0;j<=/*lev에 2곱함*/2;j++){	
-							out.print("&nbsp;");
-						}
-					}
-				%>
-					
+				<td align="left"><a href="qHitUpdate.do?board_num=글번호&page=페이지번호">					
 				글제목</a></td>										
 				<td>작성자</td>
 				<td>날짜</td>

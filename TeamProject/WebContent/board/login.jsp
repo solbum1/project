@@ -5,8 +5,8 @@
 	String	review_num			= "";
 
 	//출력 변수
-	String	passwd			= "";
-	String	id					= "";
+	String	user_passwd			= "";
+	String	user_id					= "";
 			review_num			= "";
 			
 	//CSS
@@ -26,13 +26,13 @@
 <script>
 	function register_check(form){
 	
-		if(form.id.value.length==0){
+		if(form.user_id.value.length==0){
 			alert('아이디를 확인해 주세요');
-			form.id.focus();
+			form.user_id.focus();
 			return;
-		}else if(form.passwd.value.length==0){
+		}else if(form.user_passwd.value.length==0){
 			alert('비밀번호를 확인해 주세요');
-			form.passwd.focus();
+			form.user_passwd.focus();
 			return;
 		}else{
 			form.submit();
@@ -53,7 +53,7 @@
 		
 		<tr>
 			<td>
-				<input type="text" size="20" name="id" required="required">
+				<input type="text" size="20" name="user_id" required="required">
 			</td>
 			<td rowspan="2">
 				<input type="submit" class="login_btn" value="로그인">
@@ -61,7 +61,7 @@
 		</tr>
 		<tr>
 			<td>
-				<input type="password" size="20" name="passwd" required="required">				
+				<input type="password" size="20" name="user_passwd" required="required">				
 			</td>
 		</tr>
 		<tr>

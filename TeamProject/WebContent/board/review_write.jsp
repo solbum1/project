@@ -3,7 +3,7 @@
 <%	
 	//뷰, 삽입/수정 공용페이지
 	//입력,출력 변수들
-	String	type				= "view";	//view,insert,modify
+	String	type				= "insert";	//view,insert,modify
 	String	current_page		= "";
 	String	review_writer		= "1";
 	String	review_subject		= "1";
